@@ -35,6 +35,7 @@ const GameGenreList = ({ selectedGenre, onSelectGenre }: Props) => {
               fontWeight={
                 selectedGenre?.id === genre.id ? 'extrabold' : 'normal'
               }
+              _hover={{ color: 'gray.500' }}
               onClick={() => onSelectGenre(genre)}
             >
               {genre.name}
