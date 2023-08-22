@@ -10,7 +10,7 @@ const ColorModeToggle = () => {
         isChecked={colorMode === 'dark'}
         onChange={toggleColorMode}
       />
-      <Text>
+      <Text whiteSpace={'nowrap'}>
         {colorMode.toString().charAt(0).toUpperCase() +
           colorMode.toString().slice(1)}{' '}
         mode
