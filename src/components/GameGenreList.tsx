@@ -22,7 +22,9 @@ const GameGenreList = ({ selectedGenre, onSelectGenre }: Props) => {
 
   return (
     <>
-      <Heading marginY={5}>Genres</Heading>
+      <Heading marginY={5} fontSize="2xl">
+        Genres
+      </Heading>
       <List>
         {data.map((genre) => (
           <ListItem key={genre.id} paddingY="5px">
