@@ -15,16 +15,14 @@ interface Props {
   selectedGenre: Genre | null;
 }
 const GameGenreList = ({ selectedGenre, onSelectGenre }: Props) => {
-  const { data, isLoading, erros } = useGenres();
+  const { data, isLoading, errors } = useGenres();
 
-  if (erros) return null;
+  if (errors) return null;
   if (isLoading) return <Spinner />;
 
   return (
     <>
-      <Heading marginY={2} paddingBottom={2}>
-        Genres
-      </Heading>
+      <Heading marginY={5}>Genres</Heading>
       <List>
         {data.map((genre) => (
           <ListItem key={genre.id} paddingY="5px">
